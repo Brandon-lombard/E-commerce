@@ -1,0 +1,86 @@
+/* 
+Index.html
+ */
+
+
+/* Featured products */
+
+.section1 {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.featRow {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+/* Products */
+
+
+.productContainer {
+    text-align: center;
+    padding: 100px;
+
+}
+
+.productContainer:hover {
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 30px;
+}
+
+.productContainer img {
+    width: 300px;
+    height: 250px;
+
+}
+
+/* Testimonials */
+
+.section2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.3));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    margin: auto;
+}
+
+.testimonialContainer {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+
+
+}
+
+
+
+.section2 h3 {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+.section2 h2 {
+    text-align: center;
+}
+
+/* Featured items */
+/* Image enlarge */
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}

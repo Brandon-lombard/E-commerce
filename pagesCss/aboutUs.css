@@ -1,0 +1,28 @@
+/* aboutUs.html
+*/
+
+.BackroundColorAnimate {
+    padding: 20px;
+}
+
+.aboutUsWrapper {
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin: auto;
+}
+
+.aboutUsWrapper span {
+    color: rgb(255, 0, 0);
+}
+
+.contact {
+    text-decoration: none;
+
+}

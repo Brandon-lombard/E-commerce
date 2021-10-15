@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <!-- Font Awesome -->
+
+  <!-- <link rel="stylesheet" href="https://urse.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+     -->
+
+  <!-- Bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+  <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="main.css">
+
+  <link rel="stylesheet" href="pagesCss/shoppingCart.css">
+
+
+  <!-- Google Fonts -->
+
+  <!-- 1. -->
+  <!-- Header text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@500&display=swap" rel="stylesheet">
+
+  <!-- 2. -->
+  <!-- H2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,600&family=Source+Code+Pro:ital@1&display=swap"
+    rel="stylesheet">
+
+  <!-- 3. -->
+  <!-- H3 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+
+
+  <!-- 4. -->
+  <!-- H1 -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+
+
+  <title>BW Tech</title>
+
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico" />
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-light navbar-expand-lg ">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html"><img src="images/Nav-logo.png" id="logo" class="img-fluid logoWidth"
+            alt="BW Tech"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active navAnchor" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navAnchor" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navAnchor" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navAnchor" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Product/Catagories"
+              aria-label="Product/Catagories">
+            <button class="btn searchBtn" type="button">Search</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <div id="cartHeading" class="container headerFade">
+    <div class="row">
+
+      <h3 id="pageHeading">Items In Cart</h3>
+
+      <hr>
+
+    </div>
+
+    <section id="cart" class="row" bor>
+
+
+
+
+
+    </section>
+
+    <!-- Section for forms and coupon -->
+
+    <section class="container">
+
+      <!-- dialogue hidden with coupon code -->
+
+      <dialog id="couponCode">
+
+        <h4 id="couponH4">Get a Wopping <br> <b>30% OFF</b></h4>
+
+        <p id="referenceNum">WOW30%OFF</p>
+
+        <button type="button" id="dialogClose">Close</button>
+      </dialog>
+
+
+      <!-- Form for options -->
+
+      <form id="formCoupon" class="row" action="">
+
+        <label id="couponHeading" for="">Get Your discount Coupon Here</label><br>
+
+
+        <button type="button" id="dialogShow">Click me</button>
+
+
+      </form>
+
+      <hr style="width: 50%; margin: 20px auto;">
+
+
+
+      <!-- Delivery or collection option -->
+
+      <form id="collectionContainer" class="deliveryOptions">
+
+        <label id="formDeliverHeading" for="">Would you like your item delivered or collected</label> <br><br>
+
+        Collection<input class="radioSelect" type="radio" id="collection" name="radio" value="collect">
+        <br>
+        Deliver<input class="radioSelect" type="radio" id="deliver" name="radio" value="deliver"> <br><br>
+
+
+      </form>
+
+      <form action="" id="collectionContainer">
+
+        <label id="couponInputHeading" for="">If you have a coupon enter it here</label> <br><br>
+        <label for="">Enter Your Coupon Code :</label>
+
+
+        <input value="" id="couponInput" type="text"><br>
+
+        <button type="button" class="couponAdd" style="width: 30%; padding: 10px; min-width: 150px;">Enter
+          coupon</button>
+      </form>
+
+
+      <!-- Totals of how much to pay -->
+
+      <div id="totalToPay" class="container" style="width: 100%; border: 1px solid black;">
+
+        <div class="row"></div>
+        <img src="images/Nav-logo.png" class="img-fluid" width="" style="display: inline-block; vertical-align: top;"
+          alt="">
+
+        <div style="display: inline-block; text-align: right; width: 80%; padding: 3%;">
+
+          <h5 id="displayExPrice">R 0. 00</h5>
+
+          <h5 id="vat">R 0. 00</h5>
+
+          <h4 id="displayPrice">R 0. 00</h4>
+
+          <p>Lorem ipsum dolor sit T's & C's amet consectetur adipisicing </p>
+
+          <button type="button" id="clearCart">Clear Cart</button> <button type="button" id="payNow">Pay Now</button>
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+      href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- own Js -->
+  <script src="main.js"></script>
+
+  <script src="shoppingCart.js"></script>
+
+  <script src="animations.js"></script>
+</body>
+
+</html>

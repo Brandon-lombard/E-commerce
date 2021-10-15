@@ -1,0 +1,50 @@
+/* 
+Product.html
+*/
+
+
+/* Heading Products */
+.heading {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Products inserted */
+
+.productContainer {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 70px 0;
+}
+
+
+
+.productWrapper {
+  padding: 5px;
+  width: 300px;
+  margin: auto;
+
+}
+
+
+/* image more info */
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Image enlarge */
+
+.zoom {
+  transition: transform .2s;
+  /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}

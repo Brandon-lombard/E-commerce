@@ -1,0 +1,92 @@
+/* Shopping cart.html */
+
+/* Existing Elements Only */
+
+
+#formCoupon {
+
+    padding: 0;
+    margin: 0;
+}
+
+/* Coupon Heading */
+#couponHeading {
+
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+    margin: 10px;
+    font-family: rubik;
+
+}
+
+/* Dialog button */
+#dialogShow,
+#dialogClose,
+#clearCart,
+#payNow,
+.couponAdd {
+
+    padding: 5px;
+    width: 10%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+
+
+#dialogShow:hover,
+#dialogClose:hover,
+#clearCart:hover,
+#payNow:hover,
+.couponAdd:hover {
+
+    color: red;
+    border-color: red;
+
+}
+
+/* Dialog Css */
+
+#couponCode {
+
+    width: 60%;
+
+    text-align: center;
+}
+
+#couponH4 {
+
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+
+}
+
+#couponH4 b {
+
+    color: rgb(255, 0, 0);
+}
+
+#referenceNum {
+
+    font-size: 1.2rem;
+
+}
+
+/* collection or delivery form */
+
+#collectionContainer {
+
+    padding: 20px;
+    margin: auto;
+    width: 40%;
+
+}
+
+
+#formDeliverHeading,
+#couponInputHeading {
+
+    font-size: 20px;
+}
