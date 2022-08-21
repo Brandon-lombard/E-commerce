@@ -209,31 +209,6 @@ footer {
     padding: 30px;
 }
 
-
-/* Animation */
-
-.BackroundColorAnimate {
-    animation-name: backgroundColorPalette;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-
-@keyframes backgroundColorPalette {
-    0% {
-        background: rgb(56, 56, 56);
-    }
-
-    50% {
-        background: rgb(138, 138, 138);
-    }
-
-    100% {
-        background: rgb(255, 255, 255)
-    }
-}
-
 .addToCart {
     border: 2px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
